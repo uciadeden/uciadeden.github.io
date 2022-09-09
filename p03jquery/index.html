@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Top 10 of My Best Friend</title>
+	<style type="text/css">
+		body{
+			background-color: #ededed;
+			margin: 0;
+		}
+		.post_keren{
+			background-color: #2d3436;
+			width: 50%;
+			padding: 10px;
+		}
+		.center {
+			margin: auto;
+			width: 50%;
+			border: 3px solid green;
+			padding: 10px;
+			z-index: 1;
+		} 
+		table thead{
+			background-color: #0984e3;
+			color: white;
+		}
+
+		table tbody tr{
+			background-color: #dfe6e9;
+		}
+		table tbody tr:nth-child(even) {
+			background-color: #b2bec3;
+		}
+		h3{
+
+			color: white;
+			margin: auto;
+			margin: 5px;
+		}
+		h4{
+
+			color: white;
+			margin: auto;
+			margin: 5px;
+		}
+		.modal{
+			width: 30%;
+			padding: 5px;
+			background-color: white;	
+			margin:5% 30% 30% 35%;
+			position: absolute;
+			position:fixed;
+			z-index:9999;
+			display: none;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<center>
+
+		<div class="modal">
+			Form Penginputan
+			<br>
+			<table style="width: 100%;">
+				<tr>
+					<td>No</td>
+					<td>:</td>
+					<td><input type="text" id="no"  style="width:95%" disabled readonly></td>
+				</tr>
+				<tr>
+					<td>Nama</td>
+					<td>:</td>
+					<td><input type="text" id="nama"  style="width:95%"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>
+					<td>:</td>
+					<td><input type="text" id="alamat"  style="width:95%"></td>
+				</tr>
+			</table>
+			<input type="text" id="id" value="" hidden>
+			<hr/>
+			<button style="float: right;" id="batal">Batal</button>
+			<button style="float: right;margin-right: 5px;" id="simpan">Simpan</button>
+			<div class="clear" style="clear: both;"></div>
+		</div>
+
+		<div class="post_keren">
+			<h3>42210022 | Deden Syarif Hidayat</h3>
+			<h4><u><i>My Top 10 Best Friends</i></u></h4>
+			<button id="tambah" style="float:right;margin-bottom: 5px;">Tambah Baris</button>
+			<table width="100%" border="0" cellspacing="0" cellpadding="4" id="tableId">
+				<thead>
+					<tr>
+						<th width="5%">No</th>
+						<th align="left">Nama</th>
+						<th align="left">Alamat</th>
+						<th align="left">Gambar</th>
+						<th width="10%" align="left" colspan="2">Aksi</th>
+					</tr>
+				</thead>
+				<tbody id="data">
+					<tr id="1">
+						<td id="no1">1</td>
+						<td class="nama" id="nama1" data=1>Arif</td>
+						<td class="alamat" id="alamat1" data=1>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="1">Edit</button></td>
+						<td><button class="hapus" data="1">Hapus</button></td>
+					</tr>
+					<tr id="2">
+						<td id="no2">2</td>
+						<td class="nama" id="nama2" data=2>Dayat</td>
+						<td class="alamat" id="alamat2" data=2>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="2">Edit</button></td>
+						<td><button class="hapus" data="2">Hapus</button></td>
+					</tr>
+					<tr id=3>
+						<td id="no3">3</td>
+						<td class="nama" id="nama3" data=3>DSH</td>
+						<td class="alamat" id="alamat3" data=3>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="3">Edit</button></td>
+						<td><button class="hapus" data="3">Hapus</button></td>
+					</tr>
+					<tr id=4>
+						<td id="no4">4</td>
+						<td class="nama" id="nama4" data=4>Rif</td>
+						<td class="alamat" id="alamat4" data=4>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="4">Edit</button></td>
+						<td><button class="hapus" data="4">Hapus</button></td>
+					</tr>
+					<tr id=5>
+						<td id=no5>5</td>
+						<td class="nama" id="nama5" data=5>Yat</td>
+						<td class="alamat" id="alamat5" data=5>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="5">Edit</button></td>
+						<td><button class="hapus" data="5">Hapus</button></td>
+					</tr>
+					<tr id=6>
+						<td id=no6>6</td>
+						<td class="nama" id="nama6" data=6>Syarif</td>
+						<td class="alamat" id="alamat6" data=6>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="6">Edit</button></td>
+						<td><button class="hapus" data="6">Hapus</button></td>
+					</tr>
+					<tr id=7>
+						<td id=no7>7</td>
+						<td class="nama" id="nama7" data=7>Hidayat</td>
+						<td class="alamat" id="alamat7" data=7>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="7">Edit</button></td>
+						<td><button class="hapus" data="7">Hapus</button></td>
+					</tr>
+					<tr id=8>
+						<td id=no8>8</td>
+						<td class="nama" id="nama8" data=8>Ayat</td>
+						<td class="alamat" id="alamat8" data=8>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="8">Edit</button></td>
+						<td><button class="hapus" data="8">Hapus</button></td>
+					</tr>
+					<tr id=9>
+						<td id=no9>9</td>
+						<td class="nama" id="nama9" data=9>Den</td>
+						<td class="alamat" id="alamat9" data=9>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="9">Edit</button></td>
+						<td><button class="hapus" data="9">Hapus</button></td>
+					</tr>
+					<tr id=10>
+						<td id=no10>10</td>
+						<td class="nama" id="nama10" data=10>Dede</td>
+						<td class="alamat" id="alamat10" data=10>Cirebon</td>
+						<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+						<td><button class="edit" data="10">Edit</button></td>
+						<td><button class="hapus" data="10">Hapus</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</center>
+</body>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		var counter = 100;
+
+		$(document).on('click','.hapus',function(e){
+			e.preventDefault();
+
+			var id = $(this).attr("data");
+			$("#"+id).remove();
+
+			refreshNomor();
+		});
+
+		var refreshNomor = () => {
+			var no =1;
+			$('#data > tr').each(function() {
+				var id = $(this).attr("id");
+				console.log(id);
+				$("#no"+id).text(no++);
+			});
+		}
+
+		$(document).on('click','.edit',function(e){
+			e.preventDefault();
+
+			var data = $(this).attr("data");
+			var no = $("#no"+data).html();
+			var nama = $("#nama"+data).html();
+			var alamat = $("#alamat"+data).html();
+
+			$(".modal").fadeIn(0);
+			$("#id").val(data);
+			$("#no").val(no);
+			$("#nama").val(nama)
+			$("#alamat").val(alamat)
+			$(".post_keren").css("opacity",0.5);
+		})
+
+		$(document).on('click','#batal',function(e){
+			e.preventDefault();
+
+			$(".modal").fadeOut(0);
+			$(".post_keren").css("opacity",1);
+		});
+
+		var tambah_baris = (no,nama,alamat) => {
+			counter++;
+			var baris = "";
+			baris+=`<tr id="`+counter+`">
+			<td id=no`+counter+`>`+no+`</td>
+			<td class="nama" id="nama`+counter+`" data=`+counter+`>`+nama+`</td>
+			<td class="alamat" id="alamat`+counter+`" data=`+counter+`>`+alamat+`</td>
+			<td><img src="https://picsum.photos/seed/picsum/200" style="width:40px"></td>
+			<td><button class="edit" data="`+counter+`">Edit</button></td>
+			<td><button class="hapus" data="`+counter+`">Hapus</button></td>
+			</tr>`;
+
+			$("#data").append(baris);
+		}
+
+		$(document).on('click','#simpan',function(e){
+			e.preventDefault();
+
+			var no = $("#no").val();
+			var id = $("#id").val();
+			var nama = $("#nama").val();
+			var alamat = $("#alamat").val();
+
+			if(id == ""){
+				tambah_baris(no,nama,alamat);
+			}else{
+				$("#nama"+id).html(nama);
+				$("#alamat"+id).html(alamat);
+			}
+
+			$(".modal").fadeOut(0);
+			$(".post_keren").css("opacity",1);
+		});
+
+		var dapat_no = () => {
+
+			var no =1;
+			$('#data > tr').each(function() {
+				no++;
+			});
+
+			return no;
+		}
+
+		$(document).on('click','#tambah',function(e){
+			e.preventDefault();
+			$(".post_keren").css("opacity",0.5);
+
+			$("#id").val('');
+			$("#no").val(dapat_no());
+			$("#nama").val('');
+			$("#alamat").val('');
+			$(".modal").fadeIn(0);
+		});
+	})
+</script>
+</html>
