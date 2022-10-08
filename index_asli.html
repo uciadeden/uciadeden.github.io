@@ -11,57 +11,103 @@
 	<div class="ikat">
 		<div class="baris">
 			<div class="kolom-12">
-				<img src="assets/dsh.png" width="100%">
+				<center><h1>Github Pages</h1></center>
 			</div>
-			<div class="kolom-4">
-				<h3>Profil Pribadi</h3>
-				<p>Seorang mahasiswa yang sedang mencari tujuan hidup agar menjadi pribadi yang baik.</p>
-				<h3>Riwayat Pendidikan</h3>
-				<p>
-					SD N Karang Anom 2 Kota Cirebon.<br>
-					SMP N 18 Kota Cirebon.<br>
-					SMK Wahidin Cirebon.
-				</p>
-				<h3>Kontak Saya</h3>
-				<p>
-					<table>
-						<tr>
-							<td>Telp</td>
-							<td>087777700281</td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td>dedensyarifhidayat@gmail.com</td>
-						</tr>
-					</table>
-				</p>
+			<div class="kolom-12" style="margin-bottom: 10px;">
+				<nav class="kepala_nav">
+					<ul class="kepala_ul">
+						<li class="kepala_li"><a href="#" class="aktif" id="klik_beranda">Beranda</a></li>
+						<li class="kepala_li"><a href="#" id="klik_tugas">Tugas</a></li>
+					</ul>
+				</nav>
 			</div>
-			<div class="kolom-8">
-				<h3>Skill</h3>
-				<p>
+
+			<div id="beranda">
+				<div class="kolom-12">
+					<img src="assets/dsh.png" width="100%">
+				</div>
+				<div class="kolom-4">
+					<h3>Profil Pribadi</h3>
+					<p>Seorang mahasiswa yang sedang mencari tujuan hidup agar menjadi pribadi yang baik.</p>
+					<h3>Riwayat Pendidikan</h3>
+					<p>
+						SD N Karang Anom 2 Kota Cirebon.<br>
+						SMP N 18 Kota Cirebon.<br>
+						SMK Wahidin Cirebon.
+					</p>
+					<h3>Kontak Saya</h3>
+					<p>
+						<table>
+							<tr>
+								<td>Telp</td>
+								<td>087777700281</td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>dedensyarifhidayat@gmail.com</td>
+							</tr>
+						</table>
+					</p>
+				</div>
+				<div class="kolom-8">
+					<h3>Skill</h3>
+					<p>
+						<ul>
+							<li>Mampu menguasai html,css dan jquery sederhana.</li>
+							<li>Mampu mengikuti intruksi yang diberikan oleh atasan.</li>
+							<li>Dapat bekerja secara mandiri maupun tim.</li>
+							<li>Bisa mengoperasikan microsoft word,excel dan power point.</li>
+							<li>Bisa mengoperasikan windows versi >= 8 atau Ubuntu versi >= 14.</li>
+						</ul>
+					</p>
+					<h3>Pengamalam kerja</h3>
+					<p>
+						<ul>
+							<li>Virtual merchandise(Magang) di <b>Matahari Department Store Cirebon Super Blok</b>.<br>
+								Praktik dalam industri ritel untuk mengoptimalkan penyajian produk dan layanan agar lebih menonjolkan fitur dan manfaatnya.
+							</li>
+							<li>Tukang Ketik di <b>Fath Tech</b><br>
+								Membantu jalannya projek - projek pembuatan sistem aplikasi berbasis website yang ada pada perusahaan.
+							</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+			<div id="tugas" hidden>
+				<h3>List Tugas</h3>
+				<nav>
 					<ul>
-						<li>Mampu menguasai html,css dan jquery sederhana.</li>
-						<li>Mampu mengikuti intruksi yang diberikan oleh atasan.</li>
-						<li>Dapat bekerja secara mandiri maupun tim.</li>
-						<li>Bisa mengoperasikan microsoft word,excel dan power point.</li>
-						<li>Bisa mengoperasikan windows versi >= 8 atau Ubuntu versi >= 14.</li>
+						<li><a href="p03jquery/index.html" target="_blank">P03 HTML Table JQuery Challenge</a></li>
 					</ul>
-				</p>
-				<h3>Pengamalam kerja</h3>
-				<p>
-					<ul>
-						<li>Virtual merchandise(Magang) di <b>Matahari Department Store Cirebon Super Blok</b>.<br>
-							Praktik dalam industri ritel untuk mengoptimalkan penyajian produk dan layanan agar lebih menonjolkan fitur dan manfaatnya.
-						</li>
-						<li>Tukang Ketik di <b>Fath Tech</b><br>
-							Membantu jalannya projek - projek pembuatan sistem aplikasi berbasis website yang ada pada perusahaan.
-						</li>
-					</ul>
-				</p>
+				</nav>
 			</div>
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).on('click','#klik_beranda',function(e){
+			e.preventDefault();
+
+			$("#klik_beranda").addClass("aktif");
+			$("#klik_tugas").removeClass("aktif");
+
+			$("#tugas").fadeOut(0);
+			$("#beranda").fadeIn(500);
+		})
+		$(document).on('click','#klik_tugas',function(e){
+			e.preventDefault();
+
+			$("#klik_tugas").addClass("aktif");
+			$("#klik_beranda").removeClass("aktif");
+
+			$("#beranda").fadeOut(0);
+			$("#tugas").fadeIn(500);
+		})
+	})
+</script>
 </html>
 
 

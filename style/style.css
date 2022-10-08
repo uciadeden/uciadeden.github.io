@@ -48,7 +48,6 @@ h3{
   .ikat{
     width: 800px;
     margin: auto;
-    background-color: yellow;
   }
 }
 
@@ -56,7 +55,6 @@ h3{
   .ikat{
     width: 100%;
     margin: auto;
-    background-color: blue;
   }
 }
 
@@ -64,7 +62,6 @@ h3{
   .ikat{
     width: 100%;
     margin: auto;
-    background-color: red;
   }
 
   [class*="kolom-"] {
@@ -73,4 +70,33 @@ h3{
   /*padding: 10px;*/
   /*border: 1px solid red;*/
 }
+}
+
+.kepala_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ededed;
+}
+
+.kepala_li {
+  float: left;
+}
+
+.kepala_li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.kepala_li a:hover:not(.aktif) {
+  background-color:  #27ae60;
+  color: white;
+}
+
+.aktif {
+  color: white;
+  background-color:  #27ae60;
 }
