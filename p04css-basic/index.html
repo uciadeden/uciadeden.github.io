@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>P04CSS-Basic</title>
+	<link rel="stylesheet" type="text/css" href="../style/style_deden.css">
+</head>
+<body>
+	<div class="ikat">
+		<div class="baris">
+			<div class="kolom-12">
+				<img src="../assets/stmikikmi.png" width="100%">
+			</div>
+			<div class="kolom-12">
+				<hr>
+			</div>
+			<div class="kolom-12">
+				<center><h3>FORMULIR PENDAFTARAN MAHASISWA BARU</h3></center>
+				<p>
+					<b>PETUNJUK PENGISIAN</b><br>
+					1. Isilah data isian dengan cermat, teliti dan benar<br>
+					2. Isilah dengan huruf balok<br>
+					3. Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah
+				</p>
+			</div>
+			<div class="kolom-12">
+				<fieldset>
+					<div class="kolom-4">
+						1. Nomor pendaftaran :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						2. Nama :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						3. Tanggal Ujian :
+					</div>
+					<div class="kolom-8">
+						<input type="date" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						4. Jenis Kelamin *)
+					</div>
+					<div class="kolom-8">
+						<input type="radio" name="jenis_kelamin"> Laki - Laki
+						<input type="radio" name="jenis_kelamin"> Perempuan
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						5. Jenjang/Jurusan yang dipilih *)
+					</div>
+					<div class="kolom-8">
+						<table border="1" cellspacing="0" cellpadding="5" style="width: 100%;">
+							<tr>
+								<td align="center" rowspan="2">Jenjang</td>
+								<td align="center" colspan="2">Program Studi</td>
+							</tr>
+							<tr>
+								<td align="center">Reguler</td>
+								<td align="center">Karyawan</td>
+							</tr>
+							<tr>
+								<td align="center">D III <br> (Diploma Tiga)</td>
+								<td>
+									<input type="radio" name="jurusan"> Akuntansi <br>
+									<input type="radio" name="jurusan"> Manajemen Perusahaan <br>
+								</td>
+								<td>
+									<input type="radio" name="jurusan"> Akuntansi <br>
+									<input type="radio" name="jurusan"> Manajemen Perusahaan <br>
+								</td>
+							</tr>
+							<tr>
+								<td align="center">S 1 <br>(Strata Satu)</td>
+								<td>
+									<input type="radio" name="jurusan"> Akuntansi <br>
+									<input type="radio" name="jurusan"> Manajemen <br>
+								</td>
+								<td>
+									<input type="radio" name="jurusan"> Akuntansi <br>
+									<input type="radio" name="jurusan"> Manajemen <br>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Waktu Kuliah *)
+					</div>
+					<div class="kolom-8">
+						<input type="radio" name="waktu_kuliah"> Pagi
+						<input type="radio" name="waktu_kuliah"> Sore
+						<input type="radio" name="waktu_kuliah"> Malam
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ukuran Jaket *)
+					</div>
+					<div class="kolom-8">
+						<input type="radio" name="ukuran_jaket"> Small
+						<input type="radio" name="ukuran_jaket"> Medium
+						<input type="radio" name="ukuran_jaket"> Large
+						<input type="radio" name="ukuran_jaket"> Extra Large
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sistem Pembayaran *)
+					</div>
+					<div class="kolom-8">
+						<input type="radio" name="sistem_pembayaran"> Angsuran
+						<input type="radio" name="sistem_pembayaran"> Tunai
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-12">
+						<h3>Data Pribadi</h3>
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						6. Agama :
+					</div>
+					<div class="kolom-8">
+						<select class="responsif">
+							<option>Buddha</option>
+							<option>Hindu</option>
+							<option>Islam</option>
+							<option>Katolik</option>
+							<option>Kristen Protestan</option>
+							<option>Konghucu</option>
+							<option>Lainnya</option>
+						</select>
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						7. Tempat :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp; Tanggal Lahir :
+					</div>
+					<div class="kolom-8">
+						<input type="date" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						8. Alamat Rumah :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						9. Nomor Telepon/HP :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						10. Kewarganegaraan :
+					</div>
+					<div class="kolom-8">
+						<input type="radio" name="kewarganegaraan">Wni
+						<input type="radio" name="kewarganegaraan">Wna
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Golongan Darah :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						11. Nama Orang Tua/Wali :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pekerjaan :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-12">
+						<h3>Pendidikan Terakhir</h3>
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						12. Asal SMA/SMK/Perguruan Tinggi :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Status Sekolah/Perguruan Tinggi :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jurusan :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nomor Ijazah :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tanggal Lulus :
+					</div>
+					<div class="kolom-8">
+						<input type="date" class="responsif">
+					</div>
+					<div class="kolom-12 pemisah"></div>
+					<div class="kolom-4">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nilai NEM STTB/IPK :
+					</div>
+					<div class="kolom-8">
+						<input type="text" class="responsif">
+					</div>
+				</fieldset>
+			</div>
+			<div class="kolom-12 pemisah"></div>
+			<div class="kolom-12">
+				<div class="tanda_tangan">
+					Cirebon, 10-10-2022
+					<br><br><br><br><br>
+					( ________________ ) <br>
+					<input type="text" placeholder="Nama Jelas">
+				</div>
+			</div>
+			<div class="kolom-12 pemisah"></div>
+			<div class="kolom-12">
+				<button class="button aktif">Submit</button>
+				<a href="https://uciadeden.github.io/"><button class="button" style="margin-right: 10px;">Kembali</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</body>
+</html>
